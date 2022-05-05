@@ -1,0 +1,336 @@
+body {
+  margin: 0rem 1rem;
+  background-color: #f0f8ff;
+  overflow-x: hidden;
+}
+
+.main {
+  display: grid;
+  align-items: center;
+
+  &__intro,
+  &__travel,
+  &__comfort,
+  &__download {
+    height: 90vh;
+    margin-bottom: 10vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  //section 1 - Introduction
+  &__intro {
+    align-self: center;
+    &__illustration {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .anim__float {
+        max-height: 100%;
+        position: relative;
+        img {
+          width: 80vw;
+          @media screen and (min-width: 30rem) {
+            width: 300px;
+          }
+        }
+        &__astronaut {
+          animation: floating 3s ease-in-out infinite;
+          position: absolute;
+        }
+      }
+    }
+    &__paragraph {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+      .button_cta {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+  //section 2 - Travel everywhere
+  &__travel {
+    align-self: center;
+    position: relative;
+    &__paragraph {
+      margin-top: 2rem;
+      text-align: right;
+    }
+    .ss_container {
+      margin-top: 10vh;
+      display: flex;
+      justify-content: center;
+    }
+    &__ss {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      max-height: 600px;
+      max-width: 600px;
+      height: 90vw;
+      width: 90vw;
+      overflow: hidden;
+      &_sun {
+        width: 10%;
+        height: 10%;
+        background-color: #f8ba1d;
+        border-radius: 50%;
+      }
+      &_mercury,
+      &_venus,
+      &_earth,
+      &_mars,
+      &_jupiter {
+        animation: solar linear infinite;
+        position: absolute;
+        border: 1px dashed $colorCta;
+        border-radius: 50%;
+        img {
+          animation: solar linear infinite;
+          position: absolute;
+        }
+      }
+      &_mercury {
+        animation-duration: 30s;
+        height: 16%;
+        width: 16%;
+        img {
+          animation-duration: 3s;
+          width: 10%;
+          bottom: 45%;
+          left: -5%;
+        }
+      }
+      &_venus {
+        height: 26%;
+        width: 26%;
+        animation-duration: 60s;
+        img {
+          animation-duration: 10s;
+          width: 12%;
+          bottom: 44%;
+          left: -6%;
+        }
+      }
+      &_earth {
+        height: 40%;
+        width: 40%;
+        animation-duration: 80s;
+        animation-delay: -30s;
+        img {
+          animation-duration: 10s;
+          width: 10%;
+          bottom: 45%;
+          left: -5%;
+        }
+      }
+      &_mars {
+        height: 50%;
+        width: 50%;
+        animation-duration: 100s;
+        animation-delay: -60s;
+        img {
+          animation-duration: 10s;
+          width: 8%;
+          bottom: 46%;
+          left: -4%;
+        }
+      }
+
+      &_jupiter {
+        height: 66%;
+        width: 66%;
+        animation-duration: 120s;
+        animation-delay: -60s;
+        img {
+          animation-duration: 10s;
+          width: 10%;
+          bottom: 45%;
+          left: -5%;
+        }
+      }
+      &_saturn {
+        height: 80%;
+        width: 80%;
+        animation: solar linear infinite;
+        animation-duration: 150s;
+        position: absolute;
+        border: 1px dashed $colorCta;
+        border-radius: 50%;
+        img {
+          animation: solarRevert linear infinite;
+          animation-duration: 150s;
+          position: absolute;
+          width: 10%;
+          bottom: 45%;
+          left: -5%;
+        }
+      }
+    }
+  }
+  //section 3 - Comfort
+  &__comfort {
+    align-items: center;
+    &__paragraph {
+    }
+    &__illustration {
+      margin-top: 10vh;
+      position: relative;
+      width: 100%;
+      max-width: 350px;
+      height: 400px;
+      &_glob1,
+      &_food,
+      &_bed,
+      &_jacuzzi,
+      &_glob2 {
+        animation: floating2 5s ease-in-out infinite;
+        position: absolute;
+      }
+      &_food,
+      &_bed,
+      &_jacuzzi {
+        width: 50%;
+      }
+      &_glob1 {
+        animation-delay: -2s;
+        left: 85%;
+        bottom: 70%;
+      }
+      &_food {
+        animation-delay: -3s;
+        bottom: 50%;
+        left: 5%;
+      }
+      &_bed {
+        animation-delay: -4s;
+        top: -10%;
+        left: 40%;
+      }
+      &_jacuzzi {
+        animation-delay: -1s;
+        bottom: 25%;
+        left: 40%;
+      }
+      &_glob2 {
+        left: 10%;
+        bottom: 30%;
+      }
+    }
+  }
+
+  //section 4 - Download
+  &__download {
+    padding-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    &__mockup {
+      margin-bottom: 4rem;
+      width: 100%;
+      max-width: 300px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      img {
+        display: block;
+        max-width: 200px;
+        max-height: 300px;
+        width: auto;
+        height: auto;
+      }
+      &_cent {
+        margin-left: 6rem;
+        opacity: 1;
+        position: absolute;
+      }
+      &_left {
+        padding-bottom: 10%;
+        right: 13rem;
+        bottom: 17rem;
+      }
+      &_right {
+        padding-bottom: 7%;
+        width: 100%;
+        z-index: -1;
+        left: 13rem;
+        bottom: 15rem;
+      }
+    }
+    &__paragraph {
+      h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+    }
+    .cta_final {
+      display: flex;
+    }
+    .arrow_cta {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      img {
+        animation: arrow 1.5s ease-in-out infinite;
+      }
+      img:first-child {
+        width: 20px;
+      }
+      img:last-child {
+        animation-delay: 0.25s;
+      }
+      &-left {
+        transform: rotate(-90deg);
+      }
+      &-right {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 35rem) {
+  body {
+    overflow-y: hidden;
+  }
+  .main {
+    display: flex;
+    &__intro,
+    &__travel,
+    &__comfort,
+    &__download {
+      min-width: 100vw;
+      height: 90vh;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      &__illustration {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &__paragraph {
+        text-align: left;
+        max-width: 35rem;
+        margin-right: auto;
+      }
+    }
+    &__download {
+      flex-direction: column;
+      &__paragraph {
+        margin-right: 0;
+      }
+    }
+    &__intro {
+      &__paragraph {
+        .button_cta {
+          width: 20rem;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

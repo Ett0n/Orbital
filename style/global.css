@@ -1,0 +1,1265 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "outfit";
+  src: url("fonts/outfit.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-variation-settings: "wght" 100, "wght" 900;
+}
+
+@font-face {
+  font-family: "urbanist";
+  src: url("fonts/urbanist.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-variation-settings: "wght" 100, "wght" 900;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p,
+h1,
+h2,
+h3,
+a {
+  color: #3c2f28;
+}
+
+h1 {
+  font-family: "outfit";
+  font-variation-settings: "wght" 300;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "urbanist";
+  font-variation-settings: "wght" 600;
+  margin-bottom: 1rem;
+}
+
+p,
+a {
+  font-family: "urbanist";
+  font-variation-settings: "wght" 400;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.button_cta {
+  background-color: #6a67ea;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #f4f0ee;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button_cta:hover {
+  background-color: #5c5ae0;
+}
+
+.colorCta {
+  color: #6a67ea;
+}
+
+.strong {
+  font-variation-settings: "wght" 600;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.break {
+  display: block;
+}
+
+.section_end {
+  height: 1px;
+  position: absolute;
+  bottom: 50%;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+  }
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes solar {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes solar {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes solarRevert {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes solarRevert {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes floating2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(2px, 4px);
+            transform: translate(2px, 4px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes floating2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(2px, 4px);
+            transform: translate(2px, 4px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes navMenuAnime {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform: translateX(4rem);
+            transform: translateX(4rem);
+  }
+}
+
+@keyframes navMenuAnime {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform: translateX(4rem);
+            transform: translateX(4rem);
+  }
+}
+
+@-webkit-keyframes navMenuColor {
+  0% {
+    color: #3c2f28;
+    font-variation-settings: "wght" 300;
+  }
+  80% {
+    color: #3c2f28;
+    font-variation-settings: "wght" 600;
+  }
+  100% {
+    color: #6a67ea;
+    font-variation-settings: "wght" 600;
+  }
+}
+
+@keyframes navMenuColor {
+  0% {
+    color: #3c2f28;
+    font-variation-settings: "wght" 300;
+  }
+  80% {
+    color: #3c2f28;
+    font-variation-settings: "wght" 600;
+  }
+  100% {
+    color: #6a67ea;
+    font-variation-settings: "wght" 600;
+  }
+}
+
+body {
+  margin: 0rem 1rem;
+  background-color: #f0f8ff;
+  overflow-x: hidden;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__intro, .main__travel, .main__comfort, .main__download {
+  height: 90vh;
+  margin-bottom: 10vh;
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__intro {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main__intro__illustration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__intro__illustration .anim__float {
+  max-height: 100%;
+  position: relative;
+}
+
+.main__intro__illustration .anim__float img {
+  width: 80vw;
+}
+
+@media screen and (min-width: 30rem) {
+  .main__intro__illustration .anim__float img {
+    width: 300px;
+  }
+}
+
+.main__intro__illustration .anim__float__astronaut {
+  -webkit-animation: floating 3s ease-in-out infinite;
+          animation: floating 3s ease-in-out infinite;
+  position: absolute;
+}
+
+.main__intro__paragraph {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.main__intro__paragraph h2 {
+  margin-bottom: 0.5rem;
+}
+
+.main__intro__paragraph .button_cta {
+  display: inline-block;
+  width: 100%;
+}
+
+.main__travel {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+}
+
+.main__travel__paragraph {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.main__travel .ss_container {
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__travel__ss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  max-height: 600px;
+  max-width: 600px;
+  height: 90vw;
+  width: 90vw;
+  overflow: hidden;
+}
+
+.main__travel__ss_sun {
+  width: 10%;
+  height: 10%;
+  background-color: #f8ba1d;
+  border-radius: 50%;
+}
+
+.main__travel__ss_mercury, .main__travel__ss_venus, .main__travel__ss_earth, .main__travel__ss_mars, .main__travel__ss_jupiter {
+  -webkit-animation: solar linear infinite;
+          animation: solar linear infinite;
+  position: absolute;
+  border: 1px dashed #6a67ea;
+  border-radius: 50%;
+}
+
+.main__travel__ss_mercury img, .main__travel__ss_venus img, .main__travel__ss_earth img, .main__travel__ss_mars img, .main__travel__ss_jupiter img {
+  -webkit-animation: solar linear infinite;
+          animation: solar linear infinite;
+  position: absolute;
+}
+
+.main__travel__ss_mercury {
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  height: 16%;
+  width: 16%;
+}
+
+.main__travel__ss_mercury img {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  width: 10%;
+  bottom: 45%;
+  left: -5%;
+}
+
+.main__travel__ss_venus {
+  height: 26%;
+  width: 26%;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
+}
+
+.main__travel__ss_venus img {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  width: 12%;
+  bottom: 44%;
+  left: -6%;
+}
+
+.main__travel__ss_earth {
+  height: 40%;
+  width: 40%;
+  -webkit-animation-duration: 80s;
+          animation-duration: 80s;
+  -webkit-animation-delay: -30s;
+          animation-delay: -30s;
+}
+
+.main__travel__ss_earth img {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  width: 10%;
+  bottom: 45%;
+  left: -5%;
+}
+
+.main__travel__ss_mars {
+  height: 50%;
+  width: 50%;
+  -webkit-animation-duration: 100s;
+          animation-duration: 100s;
+  -webkit-animation-delay: -60s;
+          animation-delay: -60s;
+}
+
+.main__travel__ss_mars img {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  width: 8%;
+  bottom: 46%;
+  left: -4%;
+}
+
+.main__travel__ss_jupiter {
+  height: 66%;
+  width: 66%;
+  -webkit-animation-duration: 120s;
+          animation-duration: 120s;
+  -webkit-animation-delay: -60s;
+          animation-delay: -60s;
+}
+
+.main__travel__ss_jupiter img {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  width: 10%;
+  bottom: 45%;
+  left: -5%;
+}
+
+.main__travel__ss_saturn {
+  height: 80%;
+  width: 80%;
+  -webkit-animation: solar linear infinite;
+          animation: solar linear infinite;
+  -webkit-animation-duration: 150s;
+          animation-duration: 150s;
+  position: absolute;
+  border: 1px dashed #6a67ea;
+  border-radius: 50%;
+}
+
+.main__travel__ss_saturn img {
+  -webkit-animation: solarRevert linear infinite;
+          animation: solarRevert linear infinite;
+  -webkit-animation-duration: 150s;
+          animation-duration: 150s;
+  position: absolute;
+  width: 10%;
+  bottom: 45%;
+  left: -5%;
+}
+
+.main__comfort {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__comfort__illustration {
+  margin-top: 10vh;
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 400px;
+}
+
+.main__comfort__illustration_glob1, .main__comfort__illustration_food, .main__comfort__illustration_bed, .main__comfort__illustration_jacuzzi, .main__comfort__illustration_glob2 {
+  -webkit-animation: floating2 5s ease-in-out infinite;
+          animation: floating2 5s ease-in-out infinite;
+  position: absolute;
+}
+
+.main__comfort__illustration_food, .main__comfort__illustration_bed, .main__comfort__illustration_jacuzzi {
+  width: 50%;
+}
+
+.main__comfort__illustration_glob1 {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  left: 85%;
+  bottom: 70%;
+}
+
+.main__comfort__illustration_food {
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  bottom: 50%;
+  left: 5%;
+}
+
+.main__comfort__illustration_bed {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  top: -10%;
+  left: 40%;
+}
+
+.main__comfort__illustration_jacuzzi {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  bottom: 25%;
+  left: 40%;
+}
+
+.main__comfort__illustration_glob2 {
+  left: 10%;
+  bottom: 30%;
+}
+
+.main__download {
+  padding-top: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__download__mockup {
+  margin-bottom: 4rem;
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__download__mockup img {
+  display: block;
+  max-width: 200px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+}
+
+.main__download__mockup_cent {
+  margin-left: 6rem;
+  opacity: 1;
+  position: absolute;
+}
+
+.main__download__mockup_left {
+  padding-bottom: 10%;
+  right: 13rem;
+  bottom: 17rem;
+}
+
+.main__download__mockup_right {
+  padding-bottom: 7%;
+  width: 100%;
+  z-index: -1;
+  left: 13rem;
+  bottom: 15rem;
+}
+
+.main__download__paragraph h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main__download .cta_final {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__download .arrow_cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__download .arrow_cta img {
+  -webkit-animation: arrow 1.5s ease-in-out infinite;
+          animation: arrow 1.5s ease-in-out infinite;
+}
+
+.main__download .arrow_cta img:first-child {
+  width: 20px;
+}
+
+.main__download .arrow_cta img:last-child {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.main__download .arrow_cta-left {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.main__download .arrow_cta-right {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+@media screen and (min-width: 35rem) {
+  body {
+    overflow-y: hidden;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main__intro, .main__travel, .main__comfort, .main__download {
+    min-width: 100vw;
+    height: 90vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main__intro__illustration, .main__travel__illustration, .main__comfort__illustration, .main__download__illustration {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main__intro__paragraph, .main__travel__paragraph, .main__comfort__paragraph, .main__download__paragraph {
+    text-align: left;
+    max-width: 35rem;
+    margin-right: auto;
+  }
+  .main__download {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__download__paragraph {
+    margin-right: 0;
+  }
+  .main__intro__paragraph .button_cta {
+    width: 20rem;
+    margin-top: 2rem;
+  }
+}
+
+.header__aside_nav {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(240, 248, 255, 0)), color-stop(10%, rgba(240, 248, 255, 0.2)), to(aliceblue));
+  background: linear-gradient(90deg, rgba(240, 248, 255, 0) 0%, rgba(240, 248, 255, 0.2) 10%, aliceblue 100%);
+  height: 100vh;
+  position: fixed;
+  width: 35%;
+  z-index: 1;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header__aside_nav ul {
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.header__aside_nav ul li {
+  min-height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__aside_nav ul span {
+  display: block;
+  height: 20px;
+  width: 1px;
+  background-color: #373541;
+}
+
+.header__aside_nav ul a {
+  min-height: 20px;
+  text-decoration: none;
+}
+
+.header__nav_fleche {
+  width: 50px;
+  position: fixed;
+  bottom: 2rem;
+  right: calc(50% - 25px);
+  z-index: 50;
+}
+
+.header__nav_fleche figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__nav_fleche figure img {
+  -webkit-animation: arrow 1.5s ease-in-out infinite;
+          animation: arrow 1.5s ease-in-out infinite;
+}
+
+.header__nav_fleche figure img:first-child {
+  width: 20px;
+}
+
+.header__nav_fleche figure img:last-child {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+@media screen and (min-width: 35rem) {
+  .header__aside_nav {
+    width: 30rem;
+    height: 10vh;
+    left: calc(50% - 15rem);
+    bottom: 3rem;
+    background: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__aside_nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__aside_nav ul a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: 1px solid #373541;
+  }
+  .header__aside_nav ul span {
+    width: 3rem;
+    height: 1px;
+  }
+  .header__nav_fleche {
+    bottom: calc(50% - 25px);
+    right: 2rem;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .header .navActive {
+    -webkit-animation: navMenuColor 800ms linear forwards;
+            animation: navMenuColor 800ms linear forwards;
+    border: 2px solid #6a67ea;
+    position: relative;
+  }
+  .header .navActive::before {
+    -webkit-animation: navMenuAnime 800ms linear forwards;
+            animation: navMenuAnime 800ms linear forwards;
+    -webkit-transform-origin: calc(2.5rem + 4px) 6px;
+            transform-origin: calc(2.5rem + 4px) 6px;
+    position: absolute;
+    display: block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #6a67ea;
+    border-radius: 50%;
+    left: -6px;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .hiddenMenu {
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    right: -50vw;
+  }
+  .navActive {
+    position: relative;
+    font-variation-settings: "wght" 600;
+  }
+  .navActive::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #6a67ea;
+    border-radius: 50%;
+    top: calc(50% - 3px);
+    left: -10px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,92 @@
+//ESSENTIALS IMPORTS
+@import "normalize";
+@import "fontkit";
+
+//VARIABLES
+$colorCta: #6a67ea;
+$colorOnyx: #373541;
+$colorText1: #3c2f28;
+$colorText2: #f6e0d3;
+$colorText3: #f4f0ee;
+
+//####################resets#################
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+p,
+h1,
+h2,
+h3,
+a {
+  color: $colorText1;
+}
+h1 {
+  font-family: "outfit";
+  font-variation-settings: "wght" 300;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "urbanist";
+  font-variation-settings: "wght" 600;
+  margin-bottom: 1rem;
+}
+
+p,
+a {
+  font-family: "urbanist";
+  font-variation-settings: "wght" 400;
+}
+p {
+  margin-bottom: 1rem;
+}
+.button_cta {
+  background-color: $colorCta;
+  border-radius: 10px;
+  padding: 1rem;
+  color: $colorText3;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    background-color: #5c5ae0;
+  }
+}
+.colorCta {
+  color: $colorCta;
+}
+
+.strong {
+  font-variation-settings: "wght" 600;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.break {
+  display: block;
+}
+
+.section_end {
+  height: 1px;
+  position: absolute;
+  bottom: 50%;
+}
+
+//#######################################
+
+//SCSS PAGES IMPORTS
+@import "keyframes";
+@import "home";
+@import "headernav";
+
+.hidden {
+  display: none;
+}

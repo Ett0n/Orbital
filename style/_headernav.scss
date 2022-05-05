@@ -1,0 +1,133 @@
+.header {
+  &__aside_nav {
+    transition: all 300ms;
+    background: linear-gradient(90deg, rgba(240, 248, 255, 0) 0%, rgba(240, 248, 255, 0.2) 10%, rgba(240, 248, 255, 1) 100%);
+    height: 100vh;
+    position: fixed;
+    width: 35%;
+    z-index: 1;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    ul {
+      margin-right: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+
+      li {
+        min-height: 35px;
+        display: flex;
+        align-items: center;
+      }
+      span {
+        display: block;
+        height: 20px;
+        width: 1px;
+        background-color: $colorOnyx;
+      }
+      a {
+        min-height: 20px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__nav_fleche {
+    width: 50px;
+    position: fixed;
+    bottom: 2rem;
+    right: calc(50% - 25px);
+    z-index: 50;
+    figure {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      img {
+        animation: arrow 1.5s ease-in-out infinite;
+      }
+      img:first-child {
+        width: 20px;
+      }
+      img:last-child {
+        animation-delay: 0.25s;
+      }
+    }
+  }
+  @media screen and (min-width: 35rem) {
+    &__aside_nav {
+      width: 30rem;
+      height: 10vh;
+      left: calc(50% - 15rem);
+      bottom: 3rem;
+      background: none;
+      justify-content: center;
+      ul {
+        flex-direction: row;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          height: 5rem;
+          width: 5rem;
+
+          border-radius: 50%;
+          border: 1px solid $colorOnyx;
+        }
+        span {
+          width: 3rem;
+          height: 1px;
+        }
+      }
+    }
+    &__nav_fleche {
+      bottom: calc(50% - 25px);
+      right: 2rem;
+      transform: rotate(-90deg);
+    }
+    .navActive {
+      animation: navMenuColor 800ms linear forwards;
+      border: 2px solid $colorCta;
+      position: relative;
+
+      &::before {
+        animation: navMenuAnime 800ms linear forwards;
+        transform-origin: calc(2.5rem + 4px) 6px;
+        position: absolute;
+        display: block;
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: $colorCta;
+        border-radius: 50%;
+        left: -6px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 35rem) {
+  .hiddenMenu {
+    transition: all 300ms;
+    right: -50vw;
+  }
+  .navActive {
+    position: relative;
+    font-variation-settings: "wght" 600;
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 6px;
+      height: 6px;
+      background-color: $colorCta;
+      border-radius: 50%;
+      top: calc(50% - 3px);
+      left: -10px;
+    }
+  }
+}

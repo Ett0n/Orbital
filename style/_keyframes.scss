@@ -1,0 +1,84 @@
+@keyframes floating {
+  0% {
+    transform: translate(0, -10px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -10px);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes solar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes solarRevert {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes floating2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(2px, 4px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes navMenuAnime {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+    transform: translateX(4rem);
+  }
+}
+
+@keyframes navMenuColor {
+  0% {
+    color: $colorText1;
+    font-variation-settings: "wght" 300;
+  }
+  80% {
+    color: $colorText1;
+    font-variation-settings: "wght" 600;
+  }
+  100% {
+    color: $colorCta;
+    font-variation-settings: "wght" 600;
+  }
+}
